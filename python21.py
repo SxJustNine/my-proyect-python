@@ -25,7 +25,7 @@ def login():
             print("No letras!")
     while True:
         juego = input("Cual es tu juego favorito: ")
-        if juego.isalpha():
+        if juego.replace(" ", "").isalpha():
             break
         else:
             print("Solo letras!")
